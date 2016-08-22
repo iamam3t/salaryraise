@@ -9,6 +9,7 @@ public class salaryRaise {
         String em = s.getEmail();
         String con = s.getContactNo();
         double sal = s.getSalary();
+        
         System.out.println("First Name : "+ fname);
         System.out.println("Last Name : "+ lname);
         System.out.println("Email : "+ em);

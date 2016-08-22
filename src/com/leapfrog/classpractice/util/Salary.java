@@ -1,47 +1,64 @@
 package com.leapfrog.classpractice.util;
 import java.util.Scanner;
 public class Salary {
+    
+    Scanner name = new Scanner(System.in);
     private String fullName,lastName,email,contactNo;
     private double salary;
-    Scanner name = new Scanner(System.in);
+    
     public String getFirstName() {
         System.out.println("Enter the First name:");
-        //Scanner name = new Scanner(System.in);
         String fullName = name.next();
-        return fullName;
+        return this.fullName = fullName;
     }
 
     
     public String getLastName() {
         System.out.println("Enter the Last name:");
-        //Scanner name = new Scanner(System.in);
         String lastName = name.next();
-        return fullName;
+        return this.lastName = lastName;
     }
 
 
     public String getEmail() {
         System.out.println("Enter the Email:");
-        //Scanner name = new Scanner(System.in);
         String email = name.next();
-        return email;
+        return this.email = email;
     }
 
 
     public String getContactNo() {
         System.out.println("Enter the Contact Number:");
-        //Scanner name = new Scanner(System.in);
         String contactNo = name.next();
-        return contactNo;
+        return this.contactNo = contactNo;
     }
 
 
     public double getSalary() {
         System.out.println("Enter the Salary:");
-        //Scanner name = new Scanner(System.in);
         double salary = name.nextDouble();
-        return salary;
+        return this.salary=salary;
     }
+
+    /*public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setContactNo(String contactNo) {
+        this.contactNo = contactNo;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }*/
 
     public double calculate(){
         if(salary <= 5000)
